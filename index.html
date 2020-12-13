@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chart IBS</title>
+    
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrap">
+      <h1 class="header__title">Тестовое задание для IBS</h1>
+    <p class="header__subtitle">Задача: Необходимо на стеке React\Redux реализовать график со сглаживанием. График
+      задается входной структурой с точками. При наведении на график курсора возникает popup.В popup отображать координаты
+      ближайшей точки и текст loremipsum.</p>
+    </div>
+    
+  </header>
+
+    <div class="container">
+    <svg id="svg" viewbox="0 0 800 600" width="900" height="600" class="graph">
+          <g class="first_set" data-setname="Our first data set">
+              </g>
+          <g class="labels x-labels">
+            
+          </g>
+          <g class="labels y-labels">
+
+          </g>
+
+          
+    </svg>
+    <div class="popup">
+        <p class="popup__points"></p>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nemo praesentium esse quas earum. Quibusdam accusamus voluptatem rerum fugiat obcaecati voluptates dicta ipsa velit itaque vel, consectetur perspiciatis, numquam libero?</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

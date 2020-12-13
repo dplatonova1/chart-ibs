@@ -1,0 +1,84 @@
+@font-face {
+  src: url(../../fonts/roboto-regular.woff) format("woff");
+  font-family: Roboto;
+  font-weight: normal;
+  }
+  
+  @font-face {
+    src: url(../../fonts/Montserrat-Bold.woff) format("woff");
+    font-family: Montserrat;
+    font-weight: bold;
+    }
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #171f1f;
+    color:#adadad;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+
+  .header__wrap{
+    margin: 50px calc(1rem*3) 0 calc(1rem*3) ;
+    width: 70%;
+  }
+
+  .header__title{
+    font-weight: bold;
+    font-family: 'Montserrat'
+  }
+
+  .header__subtitle{
+    margin:0
+  }
+
+.popup{
+  display: none;
+  overflow-y: hidden;
+  position: absolute;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  width: 150px;
+  height: 125px;
+  background-color: #032c2c;
+  border-radius: 6px;
+  color:#adadad;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+.container>circle:hover .popup{
+   transition: ease-in-out 0.6s;
+}
+
+.popup__points{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+svg.graph {
+  min-height: 400px;
+  margin:auto;
+}
+svg.graph:hover{
+  cursor: pointer
+}
+
+svg.graph .labels {
+  kerning: 1;
+  fill:#607174;
+}
+
+svg.graph .labels.x-labels {
+  text-anchor: middle;
+}
+
+svg.graph .labels.y-labels {
+  text-anchor: end;
+}
